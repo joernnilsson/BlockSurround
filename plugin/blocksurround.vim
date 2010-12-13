@@ -31,6 +31,4 @@ def BlockSurround(block):
 	print block;
 
 EOF
- 
-nmap <C-x> :source ~/.vim/plugin/surr2.vim<cr>
 
