@@ -1,0 +1,19 @@
+
+Select text in (any) visual mode, then execue:
+
+,i to surround selection with if(){}
+,f to surround selection with for(){}
+
+Installation:
+- put blocksurround.vim in your ~/.vim/plugin directory
+
+Notes:
+- Requires python
+- Uses JavaScript syntax
+
+Todo:
+ - Rewrite without python
+ - Add filetype support
+
+fork/edit/add/do whatever you like :)
+
