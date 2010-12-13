@@ -1,5 +1,5 @@
 vmap ,f :python BlockSurround('for')<cr>
-vmap ,i :python BlockSurround('for')<cr>
+vmap ,i :python BlockSurround('if')<cr>
 
 python << EOF
 
