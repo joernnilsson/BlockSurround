@@ -9,7 +9,6 @@ def BlockSurround(block):
 	buffer = vim.current.buffer
 	cLine, cCol = vim.current.window.cursor
 
-
 	first = int(vim.eval("line(\"'<\")"))
 	last = int(vim.eval("line(\"'>\")"))
 
@@ -22,13 +21,10 @@ def BlockSurround(block):
 
 	buffer.append(indent+'}', last);
 
-	if block == 'if':
-		buffer.append(indent+'for(var i=0; i<something.langth;i++){', first-1);
-	elif block == 'for':
+	if block == 'for':
+		buffer.append(indent+'for(var i=0; i<something.length;i++){', first-1);
+	elif block == 'if':
 		buffer.append(indent+'if(something){', first-1);
-
-	buffer[0] = block
-	print block;
 
 EOF
 
